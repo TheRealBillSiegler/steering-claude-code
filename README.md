@@ -8,6 +8,26 @@ One skill, no hooks — nothing always-on beyond its listing description.
 | --- | --- | --- |
 | `skills/steering-claude-code/` | Decision tree across the steering mechanisms, with per-option enforcement mechanics and a worked hook example. | You ask where a behavior should live, or why an instruction keeps being ignored |
 
+## Install
+
+**Via the central marketplace**, alongside Bill Siegler's other plugins:
+
+```bash
+/plugin marketplace add TheRealBillSiegler/siegler-plugins
+/plugin install steering-claude-code@siegler-plugins
+```
+
+**Direct from this repo**, standalone:
+
+```bash
+/plugin marketplace add TheRealBillSiegler/steering-claude-code
+/plugin install steering-claude-code@steering-claude-code
+```
+
+The doubled name is correct — this repo self-registers as a one-plugin marketplace, so the marketplace name and the plugin name are both `steering-claude-code`.
+
+Then restart or run `/reload-plugins` — no install form takes effect in a running session.
+
 ## Verify
 
 Invoke it: ask "where should a never-push-to-main rule live?" in a session with the plugin enabled — the answer should route to a hook or permission rule, not CLAUDE.md prose. The skill's application eval and its recorded baseline live in the plugin repo: [evals/scenarios.md](https://github.com/TheRealBillSiegler/steering-claude-code/blob/main/evals/scenarios.md).

@@ -1,0 +1,17 @@
+{
+  "$schema": "https://anthropic.com/claude-code/marketplace.schema.json",
+  "name": "steering-claude-code",
+  "description": "Decision guide for where a Claude Code behavior should live — CLAUDE.md vs rules vs skills vs subagents vs hooks vs output styles vs system-prompt appends — with the enforcement mechanics the source article doesn't cover.",
+  "owner": {
+    "name": "Bill Siegler",
+    "url": "https://github.com/TheRealBillSiegler"
+  },
+  "plugins": [
+    {
+      "name": "steering-claude-code",
+      "description": "Decision guide for where a Claude Code behavior should live — CLAUDE.md vs rules vs skills vs subagents vs hooks vs output styles vs system-prompt appends — with the enforcement mechanics the source article doesn't cover.",
+      "source": "./",
+      "category": "productivity"
+    }
+  ]
+}
