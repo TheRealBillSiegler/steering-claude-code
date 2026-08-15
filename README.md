@@ -10,12 +10,12 @@ One skill, no hooks — nothing always-on beyond its listing description.
 
 ## Verify
 
-Invoke it: ask "where should a never-push-to-main rule live?" in a session with the plugin enabled — the answer should route to a hook or permission rule, not CLAUDE.md prose. The skill's application eval and its recorded baseline live in the plugin repo: [evals/steering-claude-code/scenarios.md](https://github.com/TheRealBillSiegler/claude-plugins/blob/main/evals/steering-claude-code/scenarios.md).
+Invoke it: ask "where should a never-push-to-main rule live?" in a session with the plugin enabled — the answer should route to a hook or permission rule, not CLAUDE.md prose. The skill's application eval and its recorded baseline live in the plugin repo: [evals/scenarios.md](https://github.com/TheRealBillSiegler/steering-claude-code/blob/main/evals/scenarios.md).
 
 ## Relation to delegation-tiering
 
-Split from the former `delegation-steering` plugin: this guide answers *where behavior lives*; its sibling [`delegation-tiering`](https://github.com/TheRealBillSiegler/claude-plugins/tree/main/plugins/delegation-tiering) answers *which model a delegated agent gets* and enforces it with hooks. The skill cites that plugin's gate as its worked enforcement example; neither requires the other.
+Split from the former `delegation-steering` plugin: this guide answers *where behavior lives*; its sibling [`delegation-tiering`](https://github.com/TheRealBillSiegler/delegation-tiering) answers *which model a delegated agent gets* and enforces it with hooks. The skill cites that plugin's gate as its worked enforcement example; neither requires the other.
 
 ## Source fidelity
 
-Claims carry the same three provenance tiers as the sibling plugin — article digest, doc page, or dated live test — defined in the repo's [Anchoring policy](https://github.com/TheRealBillSiegler/claude-plugins/blob/main/docs/REMEDIATION.md#anchoring-policy). The skill's Source section links the official doc pages behind the mechanics; the dated article digest and everything else used to build and verify the skill live in the plugin repo's [docs/research/](https://github.com/TheRealBillSiegler/claude-plugins/tree/main/docs/research), not in the installed payload.
+Claims carry the same three provenance tiers as the sibling plugin — article digest, doc page, or dated live test — defined in [delegation-tiering's Anchoring policy](https://github.com/TheRealBillSiegler/delegation-tiering/blob/main/docs/REMEDIATION.md#anchoring-policy). The skill's Source section links the official doc pages behind the mechanics; the dated article digest and everything else used to build and verify the skill live in this repo's [docs/research/](docs/research/), not in the installed payload.
