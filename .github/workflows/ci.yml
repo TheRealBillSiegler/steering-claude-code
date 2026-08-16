@@ -6,9 +6,9 @@ name: CI
 
 on:
   push:
-    branches: [main]
+    branches: [main, develop]
   pull_request:
-    branches: [main]
+    branches: [main, develop]
     # ready_for_review is not a default activity type; without it a draft
     # flipped to ready would never get a CI run.
     types: [opened, synchronize, reopened, ready_for_review]
