@@ -13,14 +13,14 @@ One skill, no hooks — nothing always-on beyond its listing description.
 **Via the central marketplace**, alongside Bill Siegler's other plugins:
 
 ```bash
-/plugin marketplace add TheRealBillSiegler/siegler-plugins
+/plugin marketplace add https://github.com/TheRealBillSiegler/siegler-plugins
 /plugin install steering-claude-code@siegler-plugins
 ```
 
 **Direct from this repo**, standalone:
 
 ```bash
-/plugin marketplace add TheRealBillSiegler/steering-claude-code
+/plugin marketplace add https://github.com/TheRealBillSiegler/steering-claude-code
 /plugin install steering-claude-code@steering-claude-code
 ```
 
